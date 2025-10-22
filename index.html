@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <meta name="description" content="AI/ML portfolio — Computer Vision, NLP, Time Series, Data Visualization." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scroll progress -->
+  <div id="progressBar"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a class="brand" href="#hero">AI/ML Portfolio</a>
+    <nav class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="palette" id="palette" title="Accent color">
+        <button data-accent="#7c3aed" style="--c:#7c3aed"></button>
+        <button data-accent="#22d3ee" style="--c:#22d3ee"></button>
+        <button data-accent="#ef4444" style="--c:#ef4444"></button>
+        <button data-accent="#10b981" style="--c:#10b981"></button>
+        <button data-accent="#f59e0b" style="--c:#f59e0b"></button>
+      </div>
+      <button id="themeToggle" aria-label="Toggle theme"><i class="ti ti-moon"></i></button>
+      <a id="resumeBtn" class="btn btn-outline" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO with animated background -->
+    <section id="hero" class="hero container">
+      <canvas id="orbs" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <div class="hero-left">
+          <img id="avatar" class="avatar" src="assets/profile.jpg" alt="Profile photo" loading="lazy" />
+        </div>
+        <div class="hero-right">
+          <h1 id="name" class="gradient-text">Your Name</h1>
+          <p class="role">
+            <span id="typed"></span>
+            <span class="cursor">|</span>
+          </p>
+          <p id="summary" class="summary"></p>
+          <div id="socials" class="socials"></div>
+          <div class="cta">
+            <a href="#projects" class="btn"><i class="ti ti-rocket"></i> See Projects</a>
+            <a id="emailBtn" class="btn btn-quiet"><i class="ti ti-mail"></i><span id="emailText">you@example.com</span></a>
+          </div>
+          <div class="quick-stats" id="quickStats"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container">
+      <h2 class="section-title">Experience</h2>
+      <ol id="experienceList" class="timeline"></ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <div class="toolbar">
+          <input id="projectSearch" type="search" placeholder="Search projects..." aria-label="Search projects" />
+          <div id="projectFilters" class="filters"></div>
+        </div>
+      </div>
+      <div id="projectGrid" class="grid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container">
+      <h2 class="section-title">Skills</h2>
+      <div id="skillsWrap" class="skills-wrap"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="container">
+      <h2 class="section-title">Education</h2>
+      <div id="educationList" class="cards"></div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div id="certList" class="cards"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="muted">I’m open to internships, part‑time, and project collaborations.</p>
+      <div id="contactLinks" class="contact-links"></div>
+
+      <!-- Optional serverless form (Formspree). Add your ID in data.json to enable -->
+      <form id="contactForm" class="contact-form" hidden>
+        <div class="row">
+          <input name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button class="btn" type="submit"><i class="ti ti-send"></i> Send</button>
+        <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span id="footerName">Your Name</span> • Built on GitHub Pages</p>
+  </footer>
+
+  <!-- Project details modal -->
+  <dialog id="projectModal">
+    <div class="modal-head">
+      <h3 id="modalTitle"></h3>
+      <button id="modalClose" aria-label="Close"><i class="ti ti-x"></i></button>
+    </div>
+    <div id="modalBody" class="modal-body"></div>
+  </dialog>
+
+  <button id="toTop" class="to-top" aria-label="Back to top"><i class="ti ti-arrow-up"></i></button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
