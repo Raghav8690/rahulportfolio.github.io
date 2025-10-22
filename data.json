@@ -1,0 +1,171 @@
+{
+  "basics": {
+    "name": "YOUR NAME",
+    "role": "AI/ML Engineer • Computer Vision • NLP",
+    "location": "Mumbai, India",
+    "email": "you@example.com",
+    "website": "https://username.github.io",
+    "avatar": "assets/profile.jpg",
+    "resume_url": "https://link-to-your-resume.pdf",
+    "summary": "Motivated professional seeking to apply AI/ML skills in dynamic environments, contributing to organizational success and continuous personal growth.",
+    "links": [
+      { "title": "GitHub", "url": "https://github.com/YOUR_USERNAME", "icon": "brand-github" },
+      { "title": "LinkedIn", "url": "https://linkedin.com/in/YOUR_USERNAME", "icon": "brand-linkedin" },
+      { "title": "LeetCode", "url": "https://leetcode.com/YOUR_USERNAME", "icon": "code" }
+    ]
+  },
+
+  "quick_stats": [
+    { "icon": "school", "text": "B.Tech AI & Data Science (CGPA 9.33/10)" },
+    { "icon": "rocket", "text": "4+ major projects: CV, NLP, Time Series, DataViz" }
+  ],
+
+  "experience": [
+    {
+      "title": "Machine Learning — Internship",
+      "company": "Bharat Tele Clinic",
+      "location": "Virtual",
+      "period": "Aug 2025 – Present",
+      "tech": ["Python", "TensorFlow", "OpenCV", "Android (integration)"],
+      "highlights": [
+        "Built prototype using available AI tools, frameworks, and open datasets.",
+        "Trained/tested models to identify parameters: count, estimated age, gender, attention span.",
+        "Integrated model into the Bharat TeleClinic Android environment under guidance.",
+        "Collaborated with senior developers; incorporated feedback and tuned performance.",
+        "Supported deployment on 10+ real-world test devices; collected 10,000+ samples for analysis."
+      ]
+    },
+    {
+      "title": "Problem Setter and Tester",
+      "company": "TCET Shastra Coding Club",
+      "location": "Mumbai",
+      "period": "Dec 2024 – Present",
+      "tech": ["DSA", "Python", "Testing"],
+      "highlights": [
+        "Designed programming problems and curated edge-case test suites.",
+        "Tested solutions for correctness, time/space efficiency, and robustness."
+      ]
+    },
+    {
+      "title": "Team Member",
+      "company": "Smart India Hackathon",
+      "location": "Mumbai",
+      "period": "Dec 2024 – Present",
+      "tech": ["Geolocation", "Android", "Backend"],
+      "highlights": [
+        "Co-developed a Smart Geolocation Attendance System for efficient tracking.",
+        "Conducted research on geolocation-based solutions; addressed reliability constraints.",
+        "Experience in project development, research, and team collaboration under real-time constraints."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Smart Detection App",
+      "period": "Aug 2025 – Sep 2025",
+      "summary": "Real-time face detection and analytics app using Flutter + CV + Deep Learning with a Python/FastAPI backend.",
+      "highlights": [
+        "Integrated InsightFace and DeepFace CNNs for high-accuracy detection and feature extraction.",
+        "Used OpenCV for image preprocessing and camera input handling.",
+        "Tracked per-identity stats: estimated age, gender, race; time in frame; visit frequency.",
+        "Designed a backend with metadata logging for future analytics; addressed identity matching and reliability."
+      ],
+      "tags": ["Computer Vision", "Flutter", "OpenCV", "InsightFace", "DeepFace", "Python", "FastAPI", "Deep Learning"],
+      "repo": "https://github.com/YOUR_USERNAME/REPO_NAME",
+      "demo": "",
+      "thumbnail": "assets/projects/smart-detection.png"
+    },
+    {
+      "title": "Sentiment Analysis on Financial News",
+      "period": "Mar 2025",
+      "summary": "Classified financial news headlines into positive/negative/neutral using a BiLSTM built from scratch.",
+      "highlights": [
+        "Used Financial PhraseBank (75%+ annotator agreement).",
+        "Custom preprocessing: tokenization, stop-word removal, padding sequences.",
+        "Trained/evaluated using TensorFlow/Keras with accuracy, precision, recall, F1."
+      ],
+      "tags": ["NLP", "TensorFlow", "Keras", "BiLSTM", "Text Processing"],
+      "repo": "https://github.com/YOUR_USERNAME/REPO_NAME",
+      "thumbnail": "assets/projects/fin-sentiment.png"
+    },
+    {
+      "title": "Stock Market Analysis Dashboard",
+      "period": "Apr 2025",
+      "summary": "Exploratory stock analysis with interactive visualizations for trends and technical indicators.",
+      "highlights": [
+        "Line charts for price movement; bar charts for volume; moving averages; Bollinger Bands; RSI.",
+        "Correlation heatmap for relationships across multiple stocks using Pandas/NumPy.",
+        "Interactive plots built with Matplotlib/Plotly."
+      ],
+      "tags": ["Data Visualization", "Pandas", "Matplotlib", "Plotly", "Analytics"],
+      "repo": "https://github.com/YOUR_USERNAME/REPO_NAME",
+      "thumbnail": "assets/projects/market-dashboard.png"
+    },
+    {
+      "title": "Stock Price Prediction (LSTM)",
+      "period": "May 2024 – Jun 2024",
+      "summary": "Predicted future stock prices using a 60‑day lookback LSTM on historical data.",
+      "highlights": [
+        "Used TensorFlow/Keras with feature scaling; fetched data via yfinance.",
+        "Evaluated with train/test split and plotted prediction vs actual using Matplotlib.",
+        "Libraries: NumPy, Pandas, Matplotlib, scikit-learn."
+      ],
+      "tags": ["Time Series", "LSTM", "TensorFlow", "Pandas", "NumPy", "Matplotlib"],
+      "repo": "https://github.com/YOUR_USERNAME/REPO_NAME",
+      "thumbnail": "assets/projects/stock-lstm.png"
+    }
+  ],
+
+  "skills": [
+    { "group": "Core", "items": ["Python", "SQL", "Git/GitHub"] },
+    { "group": "Machine Learning", "items": ["scikit-learn", "TensorFlow/Keras", "Deep Learning"] },
+    { "group": "Data", "items": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Visualization", "Tableau"] },
+    { "group": "Specialized", "items": ["Computer Vision (OpenCV, InsightFace, DeepFace)", "NLP", "Time Series"] },
+    { "group": "Tools", "items": ["Jupyter", "MS-Excel", "MS-PowerPoint", "Canva"] }
+  ],
+
+  "education": [
+    {
+      "degree": "B.Tech, Artificial Intelligence and Data Science",
+      "institution": "Thakur College of Engineering and Technology",
+      "period": "2023 – 2027",
+      "meta": "CGPA: 9.33/10"
+    },
+    {
+      "degree": "Senior Secondary (XII), CBSE",
+      "institution": "Tagore Public School, Jaipur",
+      "period": "2023",
+      "meta": "Percentage: 93%"
+    },
+    {
+      "degree": "Secondary (X), CBSE",
+      "institution": "Tagore Public School, Jaipur",
+      "period": "2021",
+      "meta": "Percentage: 78%"
+    }
+  ],
+
+  "certifications": [
+    {
+      "title": "PostgreSQL",
+      "issuer": "Udemy, Virtual",
+      "date": "Dec 2024",
+      "details": "67-hour course certificate in PostgreSQL.",
+      "link": ""
+    },
+    {
+      "title": "Python",
+      "issuer": "Spoken Tutorial Project, IIT Bombay (Virtual)",
+      "date": "Jan 2024",
+      "details": ""
+    }
+  ],
+
+  "contact": [
+    { "text": "Email", "href": "mailto:you@example.com", "icon": "mail" },
+    { "text": "GitHub", "href": "https://github.com/YOUR_USERNAME", "icon": "brand-github", "external": true },
+    { "text": "LinkedIn", "href": "https://linkedin.com/in/YOUR_USERNAME", "icon": "brand-linkedin", "external": true },
+    { "text": "LeetCode", "href": "https://leetcode.com/YOUR_USERNAME", "icon": "code", "external": true }
+  ]
+}
